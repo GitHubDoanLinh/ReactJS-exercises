@@ -1,0 +1,7 @@
+{
+  "name": "typescript-is-prime",
+  "version": "1.0.0",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  }
+}
