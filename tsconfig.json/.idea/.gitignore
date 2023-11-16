@@ -1,0 +1,5 @@
+# Default ignored files
+/../../tsconfig.json /.idea/shelf/
+/../../tsconfig.json /.idea/workspace.xml
+# Editor-based HTTP Client requests
+/../../tsconfig.json /.idea/httpRequests/
