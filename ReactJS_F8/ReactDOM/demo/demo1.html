@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+</head>
+<body>
+    <!--
+        1. Tại sao phải sài React-DOM?  => để render react element ra trình duyệt
+        2. Tại sao phải tách React DOM ra ?
+        3. Render UI
+        4. Tạo:
+            <div class="post-item">
+                <h2 title="học reactjs tại f8">Học reactJS</h2>
+                <p> học reactJS từ cơ bản đến nâng cao</p>
+            </div>
+    -->
+    <div id="root"></div>
+<script>
+    const postElement  = React.createElement(
+        'div',
+        {
+            className:'post-item'
+        },
+        React.createElement(
+            'h2',
+            {
+                title:'học reacJS trong 8 ngày'
+            },
+            'học ReactJS'
+        ),
+        React.createElement(
+            'p',
+            {},
+            'học ReactJS từ cơ bản đến nâng cao'
+        )
+    )
+    console.log(postElement);
+
+    const  root = document.getElementById('root');
+    //dung ReactDOM render UI
+    ReactDOM.render(postElement, root)
+
+</script>
+
+</body>
+</html>
